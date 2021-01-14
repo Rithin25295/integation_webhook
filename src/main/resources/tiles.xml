@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+    <!DOCTYPE tiles-definitions PUBLIC
+           "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+           "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<!-- Templates -->
+
+	
+	<definition name="unsecure.basic" template="/views/layout/unsecure.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="body" value="" />
+	</definition>
+
+	<!-- Pages -->
+
+	<definition name="admin.screen" extends="unsecure.basic">
+		<put-attribute name="body" value="/views/admin.jsp" />
+	</definition>
+	<definition name="login.screen" extends="unsecure.basic">
+		<put-attribute name="body" value="/views/login.jsp" />
+	</definition>
+	<definition name="connector.screen" extends="unsecure.basic">
+		<put-attribute name="body" value="/views/connector.jsp" />
+	</definition>
+	<definition name="thankyou.screen" extends="unsecure.basic">
+		<put-attribute name="body" value="/views/thankyou.jsp" />
+	</definition>
+
+</tiles-definitions>
